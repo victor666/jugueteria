@@ -1,0 +1,56 @@
+<html>
+<head>
+<script language="javascript">
+function changeMainSize()
+{
+	if (window.innerHeight) //firefox
+	{
+	   //navegadores basados en mozilla
+	   espacio_iframe = window.innerHeight - 439;
+	}
+	else //Iexplorer
+	{
+	   if (document.body.clientHeight)
+	   {
+	      //Navegadores basados en IExplorer, es que no tengo innerheight
+	       espacio_iframe = document.body.clientHeight - 439;
+	   }
+	   else
+	   {
+	       //otros navegadores
+	       espacio_iframe = 500;
+	   }
+	} 
+	//document.getElementById("main").style.height =  espacio_iframe;
+}
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" bgcolor="#FFAD01">
+<!--onload="changeMainSize();" onresize="changeMainSize();"> -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'es-419'};
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="g-plusone" data-size="medium"></div><div class="fb-like" data-href="http://collections.testbiz.webege.com" data-send="true" data-width="310" data-show-faces="true" data-colorscheme="light" data-font="arial"></div><div><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://collections.testbiz.webege.com/" data-text="jugueteria" data-via="ralphasendeteuf" data-related="ralphasendeteuf">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+
+
+<iframe frameborder="0" height="225" width="100%" src="banner.htm" name="banner" id="banner"></iframe>
+<iframe frameborder="0" height="71" width="100%" src="menu.htm" name="menu" id="menu"></iframe>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff"><tbody><tr><td width="30%"><iframe height="600" width="300" frameborder="0"  align="left" src="menuizquierdo.php" name="menuizquierdo" id="menuizquierdo"></iframe></td><td width="60%"><iframe height="600" width="100%" frameborder="0"  align="left" src="listado.php" name="main" id="main" ></iframe></td></tr></tbody></table>
+<iframe frameborder="0" height="62" width="100%" src="mfooter.htm" name="mfooter" id="mfooter"></iframe>
+<iframe frameborder="0" height="94" width="100%" src="footer.htm" name="footer" id="footer"></iframe>
+</body>
+</html>

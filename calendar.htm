@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JavaScript code sample</title>
+<script type="text/javascript" src="PopupWindow.js"></script>
+<script type="text/javascript" src="AnchorPosition.js"></script>
+<script type="text/javascript" src="date.js"></script>
+<script type="text/javascript" src="CalendarPopup.js"></script>
+<SCRIPT LANGUAGE="JavaScript">document.write(getCalendarStyles());</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+	var cal = new CalendarPopup("testdiv1");
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+	function checkCalendar()
+	{
+		cal.select(document.forms['example'].date1,'calendarbutton','dd/MM/yyyy'); 
+		return false;
+	}
+</SCRIPT>
+</head>
+<body>
+<form name="example">
+<p>Date:</p>
+<input type="text" name="date1" value="" size=25>
+<a href="#" onClick="cal.select(document.forms['example'].date1,'anchor1','yyyy-MM-dd'); return false;"
+   name="anchor1" id="anchor1">select</a><br><br>
+<input type="submit" value="check" id="calendarbutton" name="calendarbutton" onclick="checkCalendar();"/>
+</form>
+<DIV ID="testdiv1" STYLE="position:absolute;visibility:hidden;background-color:white;layer-background-color:white;"></DIV>
+</body>
+</html>

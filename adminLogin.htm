@@ -1,0 +1,24 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Administracion - Solo usuarios regitrados</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <br/>
+        <br/>
+        <form name="verificar" action="verificarUsuario.php" method="post">
+	<table bgcolor="silver"><tbody>
+        <tr><td width=30>Usuario:</td><td width=30><input type="text" name="username_juguete"/></td></tr>
+        <tr><td width=30>Contraseña:</td><td width=30><input type="password" name="password_juguete"/></td></tr>
+        <tr><td width="100%" colspan="2"><input type="submit" name="verif" value="Aceptar" />
+        <input type="reset" value="Limpiar" />
+        <input type="submit" name="verif" value="Salir" onClick="self.close()"/>
+	</td></tr></tbody></table><br/>
+        </form>
+    </body>
+</html>
